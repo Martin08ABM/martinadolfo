@@ -1,0 +1,346 @@
+/*@media (min-width: 1024px) { 
+}*/             /*Hacerlo mas tarde*/
+
+var --dark-mode-color {
+    --dark-mode-color: #121212;
+}
+var --light-mode-color {
+    --light-mode-color: #e3e1e1;
+}
+
+/*Estilo de texto*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/*Body*/
+body {
+    background-image: url("/Public/IMAGES/Fondo.webp");
+    background-size: auto;
+    background-position: center;
+    z-index: 100;
+}
+
+/*Header*/
+header {
+    display: inline-block;
+    background-color: transparent;
+    height: 260px;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    padding: 10px;
+    position: relative;
+}
+navbar {
+    z-index: 100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    padding: 10px;
+}
+.logo {
+    display: inline-flex;
+    height: 8rem;
+    width: 6.25rem;
+    float: left;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 8px;
+    margin-left: 3rem;
+}
+.logo:hover {
+    transition: all 0.5s ease;
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+navbar div a {
+    display: inline-flex;
+    text-decoration: none;
+    float: right;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+navbar div a:hover {
+    transition: all 0.5s ease;
+    color: #000000;
+    text-decoration: underline;
+}
+header div h1 {
+    font-size: 40px;
+    width: 30rem;
+    transform: translateX(36%);
+    width: 100%;
+    margin-bottom: 1.4rem;
+}
+.name {
+    font-size: 30px;
+    width: 30rem;
+    margin-top: 1.5rem;
+}
+/*Cuerpo*/
+main {
+    display: flex;
+    width: 100%;
+}
+.container {
+    display: inline-flex;
+    width: 100rem;
+    max-width: 100rem;
+    height: 35rem;
+    background: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: space-around;
+}
+.project-container {
+    display: block;
+    width: 20rem;
+    height: 35rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(122, 122, 125);
+    cursor: pointer;
+    margin-left: 3rem;
+}
+.project-container:hover {
+    transition: all 0.5s ease-in-out;
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+.explication {
+    color: #121212;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.viewCode {
+    display: inline-flex;
+    width: 7rem;
+    font-size: 18px;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.viewCode:hover {
+    transition: all 0.5s ease-in-out;
+    background: white;
+    color: black;
+}
+/*ESTILOS DE TECNOLOGÍAS*/
+.technologies {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+main .technologies img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main .technologies img:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+    background-color: white;
+}
+/*Habilidades*/
+.container-habilidades {
+    display: inline-flex;
+    width: 100rem;
+    height: 2rem;
+    background: transparent;
+    border-radius: 30px;
+    padding: 20px;
+    justify-content: space-around;
+}
+.habilidades {
+    display: inline-flex;
+    width: 56rem;
+    height: 5rem;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(122, 122, 125);
+    cursor: pointer;
+}
+.habilidades:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.container-habilidades .habilidades button {
+    display: inline-flex;
+    height: 4rem;
+    width: auto;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: #121212;
+    padding: 10px;
+    background: #EEEEEE;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.container-habilidades .habilidades button:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.container-habilidades .habilidades button img {
+    margin-right: 8px;
+}
+/*Sobre mi*/
+.container-sobremi {
+    display: inline-flex;
+    width: 100rem;
+    height: 2rem;
+    max-width: 100rem;
+    background: transparent;
+    border-radius: 30px;
+    justify-content: center;
+}
+.sobremi {
+    display: inline-block;
+    width: 54rem;
+    height: 14rem;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(122, 122, 125);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 32%;
+    line-height: 24px;
+}
+/*Contacto*/
+.container-contactar {
+    display: flex;
+    width: 100rem;
+    height: auto;
+    background: transparent;
+    border-radius: 30px;
+    justify-content: center;
+}
+.contactar {
+    display: block;
+    width: 40rem;
+    height: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(122, 122, 125);
+    cursor: pointer;
+}
+.input-container {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.formulario-contacto {
+    display: inline-flex;
+    width: 30rem;
+    height: auto;
+    justify-content: space-between;
+}
+
+.mensaje-formulario {
+    display: block;
+}
+.boton-enviar {
+    width: 6rem;
+    height: 3.5rem;
+    background: #121212;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.boton-enviar:hover {
+    transition: all 0.5s ease-in-out;
+    background: rgb(44, 44, 44);
+    color: #EEEEEE;
+}
+
+/*Footer*/
+footer {
+    display: inline-flex;
+    width: 100%;
+    height: 6rem;
+    bottom: 0;
+    background: grey;
+    margin-top: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+}
+.formulario-contacto {
+    display: inline-flex;
+    width: 30rem;
+    height: auto;
+    padding: 10px;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.inputs {
+    display: inline-flex;
+    width: 20rem;
+    height: 2rem;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.mensaje-formulario {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 30rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+.boton-enviar {
+    width: 5rem;
+    height: 3.5rem;
+    background: #121212;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+.boton-enviar:hover {
+    transition: all 0.5s ease-in-out;
+    background: rgb(44, 44, 44);
+    color: #EEEEEE;
+}
