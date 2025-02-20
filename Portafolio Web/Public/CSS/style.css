@@ -1,132 +1,351 @@
-/* Estilos generales ya presentes en tu código */
+/*@media (min-width: 1024px) { 
+}*/             /*Hacerlo mas tarde*/
 
-/* Variables para modo oscuro y claro */
-:root {
+var --dark-mode-color {
     --dark-mode-color: #121212;
+}
+var --light-mode-color {
     --light-mode-color: #e3e1e1;
-    --primary-color: #EEEEEE;
-    --secondary-color: #121212;
-    --accent-color: rgb(122, 122, 125);
 }
 
-/* Estilos generales */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("/Public/IMAGES/Fondo.webp");
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-}
-
+/*Estilo de texto*/
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
     font-size: 26px;
-    color: var(--primary-color);
+    color: #EEEEEE;
     text-decoration: none;
 }
-
 p {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
-/* Diseño del header */
+/*Body*/
+body {
+    background-image: url("/Public/IMAGES/Fondo.webp");
+    background-size: auto;
+    background-position: center;
+    z-index: 100;
+}
+
+/*Header*/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
+    display: inline-block;
+    background-color: transparent;
+    height: 260px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 99;
+    padding: 10px;
+    position: relative;
 }
-
+navbar {
+    z-index: 100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    padding: 10px;
+}
 .logo {
-    height: 60px;
-    width: auto;
-    transition: transform 0.3s ease-in-out;
+    display: inline-flex;
+    height: 8rem;
+    width: 6.25rem;
+    float: left;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 8px;
+    margin-left: 3rem;
 }
-
 .logo:hover {
+    transition: all 0.5s ease;
+    border: 2px solid black;
     transform: scale(1.1);
 }
-
 navbar div a {
-    font-size: 20px;
-    margin: 0 15px;
+    display: inline-flex;
     text-decoration: none;
-    color: var(--primary-color);
-    transition: color 0.3s ease;
+    float: right;
+    margin-right: 4rem;
+    cursor: pointer;
 }
-
 navbar div a:hover {
-    color: var(--secondary-color);
+    transition: all 0.5s ease;
+    color: #000000;
     text-decoration: underline;
 }
-
-/* Diseño principal */
+header div h1 {
+    font-size: 40px;
+    width: 30rem;
+    transform: translateX(36%);
+    width: 100%;
+    margin-bottom: 1.4rem;
+}
+.name {
+    font-size: 30px;
+    width: 30rem;
+    margin-top: 1.5rem;
+}
+/*Cuerpo*/
 main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    padding: 20px;
+    width: 100%;
 }
-
-.container, .container-habilidades, .container-sobremi, .container-contactar {
-    width: 90%;
-    max-width: 1200px;
-    background: var(--accent-color);
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+.container {
+    display: inline-flex;
+    width: 100rem;
+    max-width: 100rem;
+    height: 35rem;
+    background: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    justify-content: space-around;
 }
-
-.container:hover, .container-habilidades:hover, .container-sobremi:hover, .container-contactar:hover {
-    transform: scale(1.02);
-}
-
 .project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 15px;
-    border-radius: 15px;
-    transition: transform 0.3s ease-in-out;
+    display: block;
+    width: 20rem;
+    height: 35rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(122, 122, 125);
+    cursor: pointer;
+    margin-left: 3rem;
 }
-
 .project-container:hover {
+    transition: all 0.5s ease-in-out;
+    border: 2px solid black;
     transform: scale(1.1);
 }
-
+.explication {
+    color: #121212;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
 .viewCode {
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    display: inline-flex;
+    width: 7rem;
+    font-size: 18px;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+    color: white;
+    background: black;
     border-radius: 10px;
-    padding: 10px 20px;
-    transition: background 0.3s ease;
+    padding: 10px;
 }
-
 .viewCode:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+    background: white;
+    color: black;
 }
-
-/* Diseño del footer */
-footer {
-    display: flex;
+/*ESTILOS DE TECNOLOGÍAS*/
+.technologies {
+    display: inline-flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    background: grey;
-    color: var(--primary-color);
 }
+main .technologies img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main .technologies img:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);
+    background-color: white;
+}
+/*Habilidades*/
+.container-habilidades {
+    display: inline-flex;
+    width: 100rem;
+    height: 2rem;
+    background: transparent;
+    border-radius: 30px;
+    padding: 20px;
+    justify-content: space-around;
+}
+.habilidades {
+    display: inline-flex;
+    width: 56rem;
+    height: 5rem;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(122, 122, 125);
+    cursor: pointer;
+}
+.habilidades:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.container-habilidades .habilidades button {
+    display: inline-flex;
+    height: 4rem;
+    width: auto;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: #121212;
+    padding: 10px;
+    background: #EEEEEE;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.container-habilidades .habilidades button:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.container-habilidades .habilidades button img {
+    margin-right: 8px;
+}
+/*Sobre mi*/
+.container-sobremi {
+    display: inline-flex;
+    width: 100rem;
+    height: 2rem;
+    max-width: 100rem;
+    background: transparent;
+    border-radius: 30px;
+    justify-content: center;
+}
+.sobremi {
+    display: inline-block;
+    width: 54rem;
+    height: 14rem;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(122, 122, 125);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 32%;
+    line-height: 24px;
+}
+/*Contacto*/
+.container-contactar {
+    display: flex;
+    width: 100rem;
+    height: auto;
+    background: transparent;
+    border-radius: 30px;
+    justify-content: center;
+}
+.contactar {
+    display: block;
+    width: 40rem;
+    height: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(122, 122, 125);
+    cursor: pointer;
+}
+.input-container {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.formulario-contacto {
+    display: inline-flex;
+    width: 30rem;
+    height: auto;
+    justify-content: space-between;
+}
+
+.mensaje-formulario {
+    display: block;
+}
+.boton-enviar {
+    width: 6rem;
+    height: 3.5rem;
+    background: #121212;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.boton-enviar:hover {
+    transition: all 0.5s ease-in-out;
+    background: rgb(44, 44, 44);
+    color: #EEEEEE;
+}
+
+/*Footer*/
+footer {
+    display: inline-flex;
+    width: 100%;
+    height: 6rem;
+    bottom: 0;
+    background: grey;
+    margin-top: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+}
+.formulario-contacto {
+    display: inline-flex;
+    width: 30rem;
+    height: auto;
+    padding: 10px;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.inputs {
+    display: inline-flex;
+    width: 20rem;
+    height: 2rem;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.mensaje-formulario {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 30rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+.boton-enviar {
+    width: 5rem;
+    height: 3.5rem;
+    background: #121212;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+.boton-enviar:hover {
+    transition: all 0.5s ease-in-out;
+    background: rgb(44, 44, 44);
+    color: #EEEEEE;
+}
+
+/* Estilos generales ya presentes en tu código */
 
 /* Media queries para hacerlo responsive */
 
@@ -141,17 +360,32 @@ footer {
 /* Para tablets (pantallas medianas, 768px a 1024px) */
 @media (max-width: 1024px) {
     header {
-        flex-direction: column;
         height: auto;
+        text-align: center;
     }
     .logo {
-        height: 5rem;
-        width: auto;
+        height: 6rem;
+        width: 5rem;
+        margin-left: 1rem;
+    }
+    navbar div a {
+        font-size: 20px;
+        margin-right: 2rem;
     }
     .container, .container-habilidades, .container-sobremi, .container-contactar {
-        width: 95%;
+        width: 90%;
         flex-direction: column;
         align-items: center;
+    }
+    .project-container, .habilidades, .sobremi, .contactar {
+        width: 90%;
+    }
+    .technologies {
+        flex-wrap: wrap;
+    }
+    main .technologies img {
+        width: 4rem;
+        height: 4rem;
     }
 }
 
@@ -165,13 +399,27 @@ footer {
     }
     .logo {
         height: 4rem;
-        width: auto;
+        width: 3.5rem;
+        margin-left: 0.5rem;
     }
     navbar div a {
         font-size: 16px;
+        margin-right: 1rem;
     }
     .container, .container-habilidades, .container-sobremi, .container-contactar {
         width: 100%;
+    }
+    .project-container, .habilidades, .sobremi, .contactar {
+        width: 100%;
+        padding: 5px;
+    }
+    .technologies {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .technologies img {
+        width: 3rem;
+        height: 3rem;
     }
     footer {
         flex-direction: column;
