@@ -22,7 +22,7 @@ p {
 
 /*Body*/
 body {
-    background-image: url("/Public/IMAGES/Fondo.webp");
+    background-image: url("/IMAGES/Fondo.webp");
     background-size: auto;
     background-position: center;
     z-index: 100;
