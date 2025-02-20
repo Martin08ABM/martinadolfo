@@ -22,7 +22,7 @@ p {
 
 /*Body*/
 body {
-    background-image: url("Public/IMAGES/Fondo.webp");
+    background-image: url("/Public/IMAGES/Fondo.webp");
     background-size: auto;
     background-position: center;
     z-index: 100;
@@ -343,86 +343,4 @@ footer {
     transition: all 0.5s ease-in-out;
     background: rgb(44, 44, 44);
     color: #EEEEEE;
-}
-
-/* Estilos generales ya presentes en tu código */
-
-/* Media queries para hacerlo responsive */
-
-/* Para PC's (pantallas grandes, 1025px en adelante) */
-@media (min-width: 1025px) {
-    .container, .container-habilidades, .container-sobremi, .container-contactar {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
-
-/* Para tablets (pantallas medianas, 768px a 1024px) */
-@media (max-width: 1024px) {
-    header {
-        height: auto;
-        text-align: center;
-    }
-    .logo {
-        height: 6rem;
-        width: 5rem;
-        margin-left: 1rem;
-    }
-    navbar div a {
-        font-size: 20px;
-        margin-right: 2rem;
-    }
-    .container, .container-habilidades, .container-sobremi, .container-contactar {
-        width: 90%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .project-container, .habilidades, .sobremi, .contactar {
-        width: 90%;
-    }
-    .technologies {
-        flex-wrap: wrap;
-    }
-    main .technologies img {
-        width: 4rem;
-        height: 4rem;
-    }
-}
-
-/* Para móviles (pantallas pequeñas, hasta 767px) */
-@media (max-width: 767px) {
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 14px;
-    }
-    .logo {
-        height: 4rem;
-        width: 3.5rem;
-        margin-left: 0.5rem;
-    }
-    navbar div a {
-        font-size: 16px;
-        margin-right: 1rem;
-    }
-    .container, .container-habilidades, .container-sobremi, .container-contactar {
-        width: 100%;
-    }
-    .project-container, .habilidades, .sobremi, .contactar {
-        width: 100%;
-        padding: 5px;
-    }
-    .technologies {
-        flex-direction: column;
-        align-items: center;
-    }
-    main .technologies img {
-        width: 3rem;
-        height: 3rem;
-    }
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
 }
