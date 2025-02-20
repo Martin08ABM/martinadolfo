@@ -8,85 +8,101 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-link">
-                <img src="IMAGES/MyPhoto_Fondo.jpeg" class="logo" alt="Logo">
-            </a>
-            <h3 class="name"><a href="index.html">Martin Adolfo</a></h3>
-            <div class="nav-links">
-                <a href="#contacto">Contacto</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="index.html">Inicio</a>
+        <navbar>
+            <div style="display: inline-flex; width: 100%; bottom: 0;">
+                <a href="index.html"><img src="IMAGES/MyPhoto_Fondo.jpeg" class="logo" alt=""></a>
+                <h3 style="display: inline-flex; margin-left: 2rem; width: 100%; color: black;" class="active"><a href="index.html" style="text-decoration: none; color: #EEEEEE;" class="name">Martin Adolfo</a></h3>
+                <div style="width: 100%; float: right; bottom: 0;">
+                    <nav>
+                        <a href="#contacto"><h4>Contacto</h4></a>
+                        <a href="#proyectos"><h4>Proyectos</h4></a>
+                        <a href="index.html"><h4>Inicio</h4></a>
+                    </nav>
+                </div>
             </div>
-        </nav>
-        <div class="header-title">
-            <h1>FRONTEND DEVELOPER</h1>
+        </navbar>
+        <div style="display: inline-flex; width: 100%; transform: translateX(-11%);">
+            <h1 style="font-size: 60px; color: white;">FRONTEND DEVELOPER</h1>
         </div>
     </header>
-
     <section id="proyectos">
-        <h1 class="section-title">PROJECTS</h1>
+        <h1 style="margin-left: 3rem; font-size: 40px; margin-top: 6rem;"">PROJECTS</h1>
         <main>
             <div class="container">
                 <div class="project-container">
-                    <p class="project-title">Portafolio Web</p>
-                    <a href="https://portfolio-web-lilac.vercel.app/" target="_blank">
-                        <img src="IMAGES/Portafolio.png" class="project-img" alt="Portafolio Web">
-                    </a>
-                    <p class="explication">Mi propio portafolio web para mostrar mis habilidades en desarrollo web.</p>
+                    <p top="0" bottom="0" style="margin-top: 10px; color: white; font-size: 26px; font-weight: 700;">Portafolio Web</p>
+                    <a href="https://portfolio-web-lilac.vercel.app/" target="_blank"><img src="IMAGES/Portafolio.png" style="width: 20rem; border-radius: 10px;" alt=""></a>
+                    <p class="explication">Mi propio portafolio web, he creado para mostrar mis habilidades y conocimientos en el mundo del desarrollo web.</p>
                     <div class="technologies">
-                        <img src="IMAGES/Logos/HTML_LOGO.png" alt="HTML">
-                        <img src="IMAGES/Logos/CSS_LOGO.png" alt="CSS">
+                        <img src="IMAGES/Logos/HTML_LOGO.png" alt="">
+                        <img src="IMAGES/Logos/CSS_LOGO.png" alt="">
                     </div>
                 </div>
                 <div class="project-container">
-                    <p class="project-title">Gestor de Contactos</p>
-                    <a href="https://gestor-de-contactos.vercel.app" target="_blank">
-                        <img src="IMAGES/GestorDeContactos.png" class="project-img" alt="Gestor de Contactos">
-                    </a>
-                    <p class="explication">Permite a los usuarios gestionar contactos almacenados localmente con localStorage.</p>
+                    <p top="0" bottom="0" style="margin-top: 10px; color: white; font-size: 26px; font-weight: 700;">Gestor de Contactos</p>
+                    <a href="https://gestor-de-contactos.vercel.app" target="_blank"><img src="IMAGES/GestorDeContactos.png" style="width: 20rem; border-radius: 10px;" alt=""></a>
+                    <p class="explication">Es un proyecto que permite a los usuarios tener guardados a sus contactos, guardándose de forma local gracias al localStorage, sin el miedo a que sus datos se envíen a un servidor externo.</p>
                     <div class="technologies">
-                        <img src="IMAGES/Logos/HTML_LOGO.png" alt="HTML">
-                        <img src="IMAGES/Logos/CSS_LOGO.png" alt="CSS">
-                        <img src="IMAGES/Logos/JS_LOGO.png" alt="JavaScript">
+                        <img src="IMAGES/Logos/HTML_LOGO.png" alt="">
+                        <img src="IMAGES/Logos/CSS_LOGO.png" alt="">
+                        <img src=IMAGES/Logos/JS_LOGO.png alt="">
                     </div>
-                    <a href="https://github.com/Martin08ABM/Gestor_de_contactos" target="_blank" class="viewCode">Ver Código</a>
+                    <a href="https://github.com/Martin08ABM/Gestor_de_contactos/tree/main/Gestor_de_contactos" target="_blank"><button class="viewCode">Ver Código</button></a>
+                </div>
+                <div class="project-container">
+                    <p top="0" bottom="0" style="margin-top: 10px; color: white; font-size: 26px; font-weight: 700;">Agenda Online</p>
+                    <a href="https://agenda-online-lilac.vercel.app/" target="_blank"><img src="IMAGES/AgendaOnline.png" style="width: 20rem; border-radius: 10px;" alt=""></a>
+                    <p class="explication">Es una web que permite a los usuarios tener una agenda en la que pueden apuntar sus pendientes, añadiendo el día en el que quiere empezar el trabajo y el dia en el que quiera finalizarlo.</p>
+                    <div class="technologies">
+                        <img src="IMAGES/Logos/HTML_LOGO.png" alt="">
+                        <img src="IMAGES/Logos/CSS_LOGO.png" alt="">
+                        <img src=IMAGES/Logos/JS_LOGO.png alt="">
+                    </div>
+                    <a href="https://github.com/Martin08ABM/Agenda_Online" target="_blank"><button class="viewCode">Ver Código</button></a>
                 </div>
             </div>
         </main>
     </section>
-
+    <h1 style="margin-left: 3rem; font-size: 40px; margin-top: 6rem;">CONOCIMIENTOS</h1>
+    <main>
+        <div class="container-habilidades">
+            <div class="habilidades">
+                <button><img src="IMAGES/MiniLogos/html.png" alt="">HTML (Nivel Medio)</button>
+                <button><img src="IMAGES/MiniLogos/css.png" alt="">CSS (Nivel Medio)</button>
+                <button><img src="IMAGES/MiniLogos/javascript.png" alt="">JavaScript (Nivel Medio)</button>
+            </div>
+        </div>
+    </main>
     <section id="sobre-mi">
-        <h1 class="section-title">SOBRE MI</h1>
+        <h1 style="margin-left: 3rem; font-size: 40px; margin-top: 8rem; width: 40rem;">SOBRE MI</h1>
         <main>
             <div class="container-sobremi">
-                <div class="sobremi">
-                    <p>¡¡Hola!!<br>Me llamo Martin, soy un desarrollador web junior con experiencia en el desarrollo de sitios web y aplicaciones web.</p>
+                <div class="sobremi" style="translate: -27%;">
+                    <p style="font-size: 18px; color: white; margin-top: 8px; margin-left: 10px;">¡¡Hola!!<br>Me llamo Martin, soy un desarrollador web junior con experiencia en el desarrollo de sitios web y aplicaciones web.<br>Mi objetivo es mejorar mi conocimiento y habilidades en el desarrollo web. Mme dedico a aprender y mejorar constantemente.<br>Estoy emocionado de trabajar en proyectos que me ayuden a mejorar mi formación y a desarrollar habilidades útiles para mi carrera.<br>Espero que este sitio web sea útil para ti y para mí.<br>¡Muchas gracias!</p>
                 </div>
             </div>
         </main>
     </section>
-
     <section id="contacto">
-        <h1 class="section-title">ENVÍAME UN MENSAJE</h1>
+        <h1 style="margin-left: 3rem; font-size: 40px; margin-top: 22rem; width: 40rem;">ENVÍAME UN MENSAJE</h1>
         <main>
             <div class="container-contactar">
                 <div class="contactar">
                     <form action="https://formspree.io/f/xyzkbnlq" method="POST">
-                        <label>Tu nombre:<input type="text" name="nombre" class="inputs" required></label>
-                        <label>Tu correo:<input type="email" name="email" class="inputs" required></label>
-                        <label>Tu mensaje:<textarea name="message" class="mensaje-formulario" required></textarea></label>
+                        <label class="formulario-contacto" style="font-weight: 600;">Tu nombre:<input type="text" name="nombre" class="inputs" required></label>
+                        <label class="formulario-contacto" style="font-weight: 600;">Tu correo:<input type="email" name="email" class="inputs" required></label>
+                        <label class="mensaje-formulario" style="font-weight: 600;">Tu mensaje:<textarea name="message" class="mensaje-formulario" required></textarea></label>
+                        <!-- your other form fields go here -->
                         <button class="boton-enviar" type="submit">Enviar</button>
                     </form>                    
                 </div>
             </div>
         </main>
     </section>
-
     <footer>
-        <a href="https://github.com/Martin08ABM" class="footer-link" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/martin-adolfo-bravo-monta%C3%B1o-5b1400340/" class="footer-link" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/martin.abm4/" class="footer-link" target="_blank">Instagram</a>
+        <button style="background-color: #121212; padding: 20px; border: none; border-radius: 20px;"><a href="https://github.com/Martin08ABM" style="text-decoration: none; color: #EEEEEE;" target="_blank">Github</a></button>
+        <button style="background-color: #121212; padding: 20px; border: none; border-radius: 20px;"><a href="https://www.linkedin.com/in/martin-adolfo-bravo-monta%C3%B1o-5b1400340/" style="text-decoration: none; color: #EEEEEE;" target="_blank">LinkedIn</a></button>
+        <button style="background-color: #121212; padding: 20px; border: none; border-radius: 20px;"><a href="https://www.instagram.com/martin.abm4/" style="text-decoration: none; color: #EEEEEE;" target="_blank">Instagram</a></button>
     </footer>
 </body>
 </html>
